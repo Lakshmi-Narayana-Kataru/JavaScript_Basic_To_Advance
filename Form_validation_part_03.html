@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form_validation_part_03</title>
+        <script type="text/javascript">
+              function fn1()
+              {
+                var user= document.getElementById("user");
+                var pass=document.getElementById("pass");
+                if(user.value.trim()==""){
+                   user.style.border="solid 3px red";
+                   document.getElementById("lbluser").style.visibility="visible";
+                   return false;
+                  
+                }
+                else if(pass.value.trim()==""){
+                   // alert("Password field is empty");
+                   pass.style.border="solid 3px red";
+                   document.getElementById("lblpass")
+                   .style.visibility="visible";
+                return false;
+                }
+                else if(pass.value.length<4){
+                    //alert("Password is too low");
+                   document.getElementById("lbl_length")
+                   .style.visibility="visible";
+                   return false
+                }
+                else{
+                    return true;
+                }
+
+              }
+
+        </script>
+    </head>
+    <body> 
+       <form onsubmit="return fn1()" action="MouseHourOver&MouseOut.html">
+
+        UserNmae: <input type="text" id="user" placeholder="Username"></input>
+        <label id="lbluser"  style="color:red; visibility:hidden;">Invalid</label><br>
+        Password :<input type="password" id="pass" placeholder="password" ></input>
+        <label id="lblpass" style="color: red; visibility:hidden;">Invalid</label>
+        <label id="lbl_length" style="color: blue; visibility: hidden;">Password too short</label>
+        <br>
+        <input type="submit" id="Submit"></input>
+       </form>
+    </body>
+</html>

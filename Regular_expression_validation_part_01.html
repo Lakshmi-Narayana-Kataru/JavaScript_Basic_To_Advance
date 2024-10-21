@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Regulat_Expression_part_01</title>
+        <script type="text/javascript">
+            function fn1(){
+                var reg=/E00/;
+                var username=document.getElementById("user");
+                if(reg.test(username.value)){
+                    alert("Username matches"); 
+                    return true;
+                }
+                else{
+                    alert("username does not match");
+                    document.getElementById("lbluser").style.visibility="visible";
+                    return false;
+                }
+
+            }
+        </script>
+    </head>
+    <body> 
+       <form action="MouseHourOver&MouseOut.html">
+       User_Name: <input type="test" id="user"></input>
+        <label id="lbluser" style="color: red; visibility:hidden;">Invalid user name</label><br><br>
+        <input onclick="fn1()" type="button" value="submit"></input>
+       </form>
+    </body>
+</html>

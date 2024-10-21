@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM_Manupulation_03
+        </title>
+        <script type="text/javascript">
+            function fn1(){
+                /* select the radio button then get the pop-up for selected radio button */
+               var rd1= document.getElementById("Rd1");
+               var rd2= document.getElementById("Rd2");
+               if(rd1.checked==true){
+                alert(rd1.value);
+               }
+               else if(rd2.checked==true){
+                alert(rd2.value);
+               }
+               else{
+                alert("No radio button checked");
+               }
+            }
+
+        </script>
+    </head>
+    <body> 
+      <input type="radio"name="rd1" value="shivayya" id="Rd1">Shiavyya</input><br>
+      <input type="radio" name="rd1" value="parvathi" id="Rd2">Parvathi</input><br>
+      <button onclick="fn1()">Click me</button>
+    </body>
+</html>

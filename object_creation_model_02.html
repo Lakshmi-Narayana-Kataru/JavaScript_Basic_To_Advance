@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Objects_creation_part_02</title>
+        <script type="text/javascript">
+            function car(bradn,model,price){
+                this.bradn=bradn;
+                this.model=model;
+                this.price=price;
+                this.fn1=function(){
+                    document.write("<h2>"+"Those are the below car details"+"</h2>");
+                    document.write("<h3>"+"This car can have price "+price+" from "+model+"model and brand is "+bradn);
+                }
+            }
+            car.millage="2333";
+            var car1 = new car("tesla","electronic","23455");
+            car1.fn1();
+            document.write("<br>");
+            document.write(typeof(car1.price));
+            document.write("<br>");
+            document.write(typeof(car1));
+            document.write("<br>");
+            document.write(car1.model);
+            document.write("<br>");
+            document.write(car.millage);
+            delete car.millage;
+            document.write("<br>");
+            document.write(car.millage);
+        </script>
+    </head>
+    <body> 
+      
+    </body>
+</html>

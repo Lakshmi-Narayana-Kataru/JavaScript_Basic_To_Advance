@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form_validaation_part_01</title>
+        <script type="text/javascript">
+              function fn1(){
+                var user= document.getElementById("user");
+                var pass=document.getElementById("pass");
+                if(user.value.trim()=="" || pass.value.trim()==""){
+                    alert("UserName & password fields are empty")
+                    return false;
+                }
+                else{
+                    return true;
+                }
+
+              }
+
+        </script>
+    </head>
+    <body> 
+       <form onsubmit="return fn1()" action="MouseHourOver&MouseOut.html">
+        UserNmae: <input type="text" id="user" placeholder="Username"></input><br>
+        Password :<input type="password" id="pass" placeholder="password" ></input><br>
+        <input type="submit" id="Submit"></input>
+       </form>
+    </body>
+</html>

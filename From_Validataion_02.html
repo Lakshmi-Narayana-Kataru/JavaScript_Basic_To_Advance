@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form_validation_part_02</title>
+        <script type="text/javascript">
+              function fn1(){
+                var user= document.getElementById("user");
+                var pass=document.getElementById("pass");
+                if(user.value.trim()==""){
+                    alert("UserName field is empty");
+                    return false;
+                }
+                else if(pass.value.trim()==""){
+                    alert("Password field is empty");
+                    return false;
+                }
+                else if(user.value!="Shivayya"){
+                    alert("Invalid Username");
+                    return false;
+                }
+                else if(pass.value!="Parvathi"){
+                    alert("Invalid Password");
+                    return false;
+                }
+                else{
+                    true;
+                }
+
+              }
+
+        </script>
+    </head>
+    <body> 
+       <form onsubmit="return fn1()" action="MouseHourOver&MouseOut.html">
+        UserNmae: <input type="text" id="user" placeholder="Username"></input><br>
+        Password :<input type="password" id="pass" placeholder="password" ></input><br>
+        <input type="submit" id="Submit"></input>
+       </form>
+    </body>
+</html>

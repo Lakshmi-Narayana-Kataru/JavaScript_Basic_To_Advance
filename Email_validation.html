@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Email_validation</title>
+        <script type="text/javascript">
+            /* Email validation using Reg-Ex function */
+            function fn1(){
+                var reg=/^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,10})(.[a-z]{2,10})?$/
+                var Email=document.getElementById("Email").value;
+                if(reg.test(Email)){
+ 
+                    document.getElementById("lbltel").innerHTML="Valid";
+                    document.getElementById("lbltel").style.visibility="visible";
+                    document.getElementById("lbltel").style.color="Green";
+                }
+                else{
+                    document.getElementById("lbltel").innerHTML="InValid";
+                    document.getElementById("lbltel").style.visibility="visible";
+                    document.getElementById("lbltel").style.color="red";
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <form>
+            <input id="Email" type="test" placeholder="Enter valid Email"></input><br>
+            <label id="lbltel" style="color: red; visibility:hidden;">Invalid</label><br><br>
+            <button onclick="fn1()" type="button" value="submit">submit</button>
+        </form>
+    </body>
+</html>

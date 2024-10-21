@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MobileNumber_validation</title>
+        <script type="text/javascript">
+            function fn1(){
+                var reg=/^[6-9][0-9]{9}$/
+                var Mobile_Number=document.getElementById("tel").value;
+                if(reg.test(Mobile_Number)){
+
+                    document.getElementById("lbltel").innerHTML="Valid";
+                    document.getElementById("lbltel").style.visibility="visible";
+                    document.getElementById("lbltel").style.color="Green";
+                }
+                else{
+                    document.getElementById("lbltel").innerHTML="InValid";
+                    document.getElementById("lbltel").style.visibility="visible";
+                    document.getElementById("lbltel").style.color="red";
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <form>
+            <input id="tel" type="test" placeholder="Mobile Number"></input><br>
+            <label id="lbltel" style="color: red; visibility:hidden;">Invalid</label><br><br>
+            <button onclick="fn1()" type="button" value="submit">submit</button>
+        </form>
+    </body>
+</html>

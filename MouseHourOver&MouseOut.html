@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mouse_Oparations</title>
+        <script type="text/javascript">
+              function setnewimage(){
+               var img1= document.getElementById("image");
+               img1.src="../../../Pictures/Tata Nexon.PNG"
+              }
+              function setOldImage(){
+                var img2= document.getElementById("image");
+               img2.src="../../../Pictures/samsung.PNG"
+              }
+
+        </script>
+    </head>
+    <body> 
+        <img id="image" src="../../../Pictures/samsung.PNG" height="200px" width="200px" onmouseover="setnewimage()" onmouseout="setOldImage()"/>
+    </body>
+</html>

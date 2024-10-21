@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM_Manupulation_04</title>
+        <script type="text/javascript">
+            /* Select the option then get the pop-up to that perticular option*/
+            function fn1(){
+                var select=document.getElementById("select1");
+                alert(select.options[select.selectedIndex].value)
+            }
+
+        </script>
+    </head>
+    <body> 
+        <select id="select1">
+            <option value="shivayya">Shivayya</option>
+            <option value="parvathi">Parvathi</option>
+            <option value="vinayaka">Vinayaka</option>
+            <option value="ayyappa">Ayyappa</option>
+        </select><br><br>
+        <button onclick="fn1()">OK</button>
+    </body>
+</html>

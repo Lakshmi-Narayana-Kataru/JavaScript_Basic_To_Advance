@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM_Manupulation_02</title>
+        <script type="text/javascript">
+            /* UserName and Password Validataion */
+            function fn1(){
+                var user=document.getElementById("user");
+                var pass=document.getElementById("pass");
+                // alert(user.value);
+                // alert(pass.value);
+                if(user.value=="shivayya" && pass.value=="parvathi"){
+                    alert("Login Successfull");
+                }
+                else{
+                    alert("Login failed");
+                }
+            }
+
+        </script>
+    </head>
+    <body> 
+      username:<input type="test" placeholder="User name" id="user"></input><br>
+      password:<input type="password" placeholder="Password" id="pass"></input><br>
+      <button onclick="fn1()">Login</button>
+    </body>
+</html>
